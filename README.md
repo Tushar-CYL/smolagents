@@ -20,28 +20,6 @@ bash
 Copy
 pip install smolagents
 Quick Start
-Here's a simple example to get you started with SmolAgents:
-
-python
-Copy
-from smolagents import Agent, Task
-
-# Define a task
-class GreetUser(Task):
-    def run(self, input_data):
-        return f"Hello, {input_data['name']}!"
-
-# Create an agent
-agent = Agent()
-
-# Add the task to the agent
-agent.add_task(GreetUser())
-
-# Run the agent
-response = agent.execute({"name": "Alice"})
-print(response)  # Output: Hello, Alice!
-Documentation
-For detailed documentation, including API references, tutorials, and examples, visit the SmolAgents Documentation.
 
 Contributing
 We welcome contributions! If you'd like to contribute to SmolAgents, please read our Contributing Guidelines and submit a pull request.
